@@ -62,7 +62,7 @@
         <div>
           <div class="contact-form">
             <h3>Send a message</h3>
-            <form onsubmit="handleSubmit(event)">
+            <form action="https://formspree.io/f/mqevlkyb" method="POST">
               <div class="form-group">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Jane Smith" required />
@@ -91,10 +91,6 @@
   <script>
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
-    function handleSubmit(e) {
-      e.preventDefault();
-      alert('Thanks for your message! Connect this form to Formspree.io for real email delivery — it\'s free.');
-    }
   </script>
 </body>
 </html>
