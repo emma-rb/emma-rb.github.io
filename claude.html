@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Built with Claude — Emma Bridges</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><svg width="38" height="19" viewBox="0 0 38 19" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:9px;"><path d="M2,9.5 C5,2.5 15,0 23,9.5 C15,19 5,16.5 2,9.5 Z" stroke="#C04870" stroke-width="1.7" fill="rgba(192,72,112,0.10)" stroke-linejoin="round"/><path d="M23,9.5 C27,5.5 34,2.5 32,9.5 C34,16.5 27,13.5 23,9.5 Z" stroke="#B0B418" stroke-width="1.7" fill="rgba(176,180,24,0.12)" stroke-linejoin="round"/><circle cx="9" cy="8.5" r="1.4" fill="#C04870"/><path d="M8,9.5 Q15,9 23,9.5" stroke="#D87090" stroke-width="0.8" opacity="0.55"/></svg>Emma Bridges</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="claude.html" class="active">Built with Claude</a></li>
+        <li><a href="contact.html" class="nav-cta">Say Hello</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="claude-section">
+    <div class="container claude-inner">
+      <div class="claude-badge"><span>✦</span> Built with Claude · Anthropic</div>
+      <p class="section-label" style="color: var(--terra-light);">Meta-Story</p>
+      <h1 class="section-heading">How I used Claude to build this</h1>
+      <p class="section-sub">
+        This portfolio is itself a demonstration of something I believe deeply: that nonprofits — and the people who work in them — shouldn't be held back by unfamiliarity with technology. I used Claude — Anthropic's AI — to design, code, and deploy this site without writing a single line of code. Here's exactly how it worked.
+      </p>
+
+      <div class="claude-steps">
+        <div class="claude-step">
+          <div class="step-num">01</div>
+          <div class="step-title">Brief &amp; Structure</div>
+          <div class="step-desc">I described my background and goals to Claude. Together we mapped out the ideal page structure and content strategy to showcase nonprofit experience for a professional audience.</div>
+        </div>
+        <div class="claude-step">
+          <div class="step-num">02</div>
+          <div class="step-title">Design &amp; Code</div>
+          <div class="step-desc">Claude generated the full HTML, CSS, and multi-page architecture — a warm, responsive design with a custom color palette, typography, and interactive elements. I didn't write a single line from scratch.</div>
+        </div>
+        <div class="claude-step">
+          <div class="step-num">03</div>
+          <div class="step-title">Content Strategy</div>
+          <div class="step-desc">Claude helped me think through what to say on each page — not just the format, but the story: how to frame my experience, values, and vision in a way that's clear and authentic.</div>
+        </div>
+        <div class="claude-step">
+          <div class="step-num">04</div>
+          <div class="step-title">Deployment</div>
+          <div class="step-desc">Claude walked me through publishing the site for free on GitHub Pages — from creating the repo to going live with a custom URL. No expensive hosting needed.</div>
+        </div>
+        <div class="claude-step">
+          <div class="step-num">05</div>
+          <div class="step-title">Ongoing Review &amp; Ethics</div>
+          <div class="step-desc">Using AI well means staying in the driver's seat. Throughout this project I reviewed every output for accuracy, corrected content that misrepresented my experience, and removed anything that didn't reflect my actual voice. Claude is a powerful collaborator — but the judgment, the values, and the accountability are always mine.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 <strong>Emma Bridges</strong> · Built with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> · Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+  </script>
+</body>
+</html>

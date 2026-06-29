@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emma Bridges — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><svg width="38" height="19" viewBox="0 0 38 19" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:9px;"><path d="M2,9.5 C5,2.5 15,0 23,9.5 C15,19 5,16.5 2,9.5 Z" stroke="#C04870" stroke-width="1.7" fill="rgba(192,72,112,0.10)" stroke-linejoin="round"/><path d="M23,9.5 C27,5.5 34,2.5 32,9.5 C34,16.5 27,13.5 23,9.5 Z" stroke="#B0B418" stroke-width="1.7" fill="rgba(176,180,24,0.12)" stroke-linejoin="round"/><circle cx="9" cy="8.5" r="1.4" fill="#C04870"/><path d="M8,9.5 Q15,9 23,9.5" stroke="#D87090" stroke-width="0.8" opacity="0.55"/></svg>Emma Bridges</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="claude.html">Built with Claude</a></li>
+        <li><a href="contact.html" class="nav-cta">Say Hello</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero" class="section">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-content">
+          <p class="hero-greeting">Relationally driven &nbsp;·&nbsp; Tech-forward &nbsp;·&nbsp; Recent MPSA graduate</p>
+          <h1 class="hero-name">Emma Bridges</h1>
+          <p class="hero-tagline">Recent MPSA graduate: passionate about people, fundraising, and technology.</p>
+          <p class="hero-bio">
+            I'm unabashedly a nerd for nonprofit governance, leadership, and fundraising. After falling
+            in love with the sector through an anti-human trafficking internship, I applied to earn my
+            Master of Public Service and Administration (MPSA) from Texas A&amp;M's Bush School. I recently
+            graduated, and now I'm focused on something I see across the sector: organizations with
+            powerful missions that are behind on the tools available to them. I'm passionate about
+            helping nonprofits fundraise smarter, lead more intentionally, and leverage technology to
+            extend their impact — without losing the human connection at the core of what they do.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">See My Work</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">$25K+</div>
+              <div class="stat-label">Funds Raised</div>
+            </div>
+            <div>
+              <div class="stat-num">500+</div>
+              <div class="stat-label">People Reached</div>
+            </div>
+            <div>
+              <div class="stat-num">4.0</div>
+              <div class="stat-label">GPA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <div class="hero-dot"></div>
+            <div class="hero-photo-bg"></div>
+            <div class="hero-photo">
+              <img src="Emmaheadshot.JPG" alt="Emma Bridges" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Emma Bridges</strong> · Built with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> · Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+  </script>
+</body>
+</html>
